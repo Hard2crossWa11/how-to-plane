@@ -1,5 +1,5 @@
 //Customize blacklist
-let blacklist=['共青团中央','广东共青团','浙江共青团','央视频',]
+let blacklist=['共青团中央','广东共青团','浙江共青团','央视频']
 
 let body = $response.body
 body=JSON.parse(body)
