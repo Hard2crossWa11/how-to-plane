@@ -7,6 +7,11 @@ http-response ^https://[\s\S]*\/aweme/v1/(feed|aweme/post|follow/feed)/ requires
 
 [MITM]
 hostname = *.amemv.com, *.snssdk.com
+
+# 抖音去广告去水印 (By Choler)(QX)
+;^https://[\s\S]*\/aweme/v1/(feed|aweme/post|follow/feed)/ url script-response-body https://Choler.github.io/Surge/Script/Aweme.js
+;^https://aweme-eagle(.*)\.snssdk\.com/aweme/v2/ url 302 https://aweme-eagle$1.snssdk.com/aweme/v1/
+
 */
 
 let arr = {
